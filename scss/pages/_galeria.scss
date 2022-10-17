@@ -1,0 +1,15 @@
+.foto {
+    cursor: default;
+    overflow: hidden;
+    transition: all 400ms ease;
+    @include tamanos (150px, 150px)
+}
+.foto:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+@mixin tamanos ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}

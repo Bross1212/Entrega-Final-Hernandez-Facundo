@@ -1,0 +1,48 @@
+.nav-item {
+    -webkit-animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.nav-item a{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 8px;
+    color: white;
+}
+
+.nav-item a:hover {
+    text-decoration: overline;
+    color: rgb(255, 154, 230);
+    transition: 0.5s;
+}
+
+.nav-item a:active {
+    color: gray;
+}
+
+.nav-item a:not(.menu-link) {
+    color: rgb(255, 81, 217);
+}
+
+.item1 {
+    animation-delay: 2s;
+}
+
+.item2 {
+    animation-delay: 1.5s;
+}
+
+.item3 {
+    animation-delay: 1s;
+}
+
+.item4 {
+    animation-delay: 0.5s;
+}
+
+.item5 {
+    animation-delay:  0s;
+}
+
+
+@-webkit-keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}
+@keyframes slide-right{0%{-webkit-transform:translateX(0);transform:translateX(0)}100%{-webkit-transform:translateX(100px);transform:translateX(100px)}}
